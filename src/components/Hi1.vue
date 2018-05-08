@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <router-view class="aa"></router-view>
+    {{$route.params.username}}
   </div>
 </template>
  
@@ -10,7 +10,7 @@ export default {
   name: "hi",
   data() {
     return {
-      msg: "Hi, I am Jianshe"
+      msg: "Hi, I am Hi1"
     };
   }
 };
