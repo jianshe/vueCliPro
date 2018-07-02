@@ -16,7 +16,7 @@ const mutations = {
         state.count--;
     }
 }
-const getters = {
+const getters = { //getters是store的计算属性，
     count: function(state) {
         return state.count += 100;
     }

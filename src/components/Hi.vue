@@ -1,7 +1,6 @@
 <template>
-  <div class="hello">
+  <div class="main">
     <h1>{{ msg }}</h1>
-    <router-view class="aa"></router-view>
   </div>
 </template>
  
@@ -18,5 +17,19 @@ export default {
  
  
 <style scoped>
+
+    .main{
+        position: relative;
+        top:200px;
+        margin: 0 auto;
+        height:45px;
+        width: 300px;
+        background-color:dimgray;
+        transition:transform .6s ease 0s;
+        transform: rotate(0deg);
+    }
+    .main:hover{
+        transform: rotate(180deg);
+    }
 
 </style>

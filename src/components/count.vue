@@ -27,7 +27,12 @@ export default {
   },
   computed: {
     ...mapState(["count"]),
-    ...mapGetters(["count"])
+    // ...mapGetters(["count"])
+  },
+  watch:{
+    count:function(val,oldVal){
+      console.log("新值："+val+"原始值："+oldVal);
+    }
   }
 };
 </script>
